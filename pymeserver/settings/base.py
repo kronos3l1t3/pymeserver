@@ -7,6 +7,8 @@ from datetime import timedelta
 
 import environ
 
+env = environ.Env()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'. ------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parent.parent
 PORJECT_DIR = BASE_DIR.parent
@@ -36,7 +38,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     # 'apps.dashboard.DashboardConfig'
-    # 'apps.panel.apps.PanelConfig'
+    'apps.panel.apps.PanelConfig'
     # 'apps.products.ProductsConfig'
 ]
 
@@ -70,3 +72,10 @@ TEMPLATES = [
     },
 ]
 
+ROOT_URLCONF = 'pymeserver.urls'
+
+STATIC_URL = 'static/'
+
+WSGI_APPLICATION = 'pymeserver.wsgi.application'
+
+MEDIA_URL = '/media/'
