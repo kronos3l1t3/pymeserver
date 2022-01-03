@@ -6,4 +6,4 @@ class NomenclatorsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'apps.nomenclators'
     label = 'Nomenclators'
-    verbose_name = _('Nomencladores')
+    verbose_name = _('Nomenclator')

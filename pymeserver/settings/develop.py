@@ -1,3 +1,5 @@
+import os
+
 from .base import *
 
 
@@ -17,3 +19,7 @@ DATABASES = {
         'NAME': env.str("DJANGO_DB_NAME", default='db.sqlite3'),
     }
 }
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)

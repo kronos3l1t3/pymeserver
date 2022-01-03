@@ -43,6 +43,10 @@ class Country(models.Model):
         auto_now=True
     )
 
+    class Meta:
+        verbose_name = _('Country')
+        verbose_name_plural = _('Countries')
+
 
 class Location(models.Model):
     """
