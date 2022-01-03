@@ -3,8 +3,6 @@ Base settings to build other settings files upon.
 """
 from pathlib import Path
 
-from datetime import timedelta
-
 import environ
 
 env = environ.Env()
@@ -38,7 +36,8 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     # 'apps.dashboard.DashboardConfig'
-    'apps.panel.apps.PanelConfig'
+    'apps.panel.apps.PanelConfig',
+    'apps.nomenclators.apps.NomenclatorsConfig'
     # 'apps.products.ProductsConfig'
 ]
 
@@ -79,3 +78,6 @@ STATIC_URL = 'static/'
 WSGI_APPLICATION = 'pymeserver.wsgi.application'
 
 MEDIA_URL = '/media/'
+
+# LANGUAGE
+LANGUAGE_CODE = 'es-es'
