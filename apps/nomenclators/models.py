@@ -22,6 +22,10 @@ class Coin(models.Model):
         auto_now=True
     )
 
+    class Meta:
+        verbose_name = _('Coin')
+        verbose_name_plural = _('Coins')
+
 
 class Country(models.Model):
     """
@@ -69,6 +73,10 @@ class Location(models.Model):
         auto_now=True
     )
 
+    class Meta:
+        verbose_name = _('Location')
+        verbose_name_plural = _('Locations')
+
 
 class Gateway(models.Model):
     """
@@ -99,3 +107,7 @@ class Gateway(models.Model):
         _('change time'),
         auto_now=True
     )
+
+    class Meta:
+        verbose_name = _('Gateway')
+        verbose_name_plural = _('Gateways')
