@@ -11,4 +11,5 @@ uvicorn
 uvloop
 whitenoise
 httptools
+pkg_resources
 
