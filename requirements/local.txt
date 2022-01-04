@@ -2,7 +2,7 @@
 
 Werkzeug==2.0.2
 ipdb==0.13.9
-watchgod==0.7
+watchdog==0.7
 psycopg2-binary==2.9.2
 
 # Testing

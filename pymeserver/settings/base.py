@@ -81,3 +81,5 @@ MEDIA_URL = '/media/'
 
 # LANGUAGE
 LANGUAGE_CODE = 'es-es'
+
+STATIC_ROOT = "/"
