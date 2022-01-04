@@ -2,6 +2,8 @@ import os
 
 from .base import *
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 ALLOWED_HOSTS = env("ALLOWED_HOSTS", default=["*"])
 DEBUG = env("DEBUG", default=False)
 

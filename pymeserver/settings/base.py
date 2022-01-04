@@ -51,8 +51,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
-    "django.middleware.common.CommonMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 TEMPLATES = [
@@ -82,4 +82,4 @@ MEDIA_URL = '/media/'
 # LANGUAGE
 LANGUAGE_CODE = 'es-es'
 
-STATIC_ROOT = "/"
+STATIC_ROOT = BASE_DIR.parent
