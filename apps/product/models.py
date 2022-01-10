@@ -40,5 +40,5 @@ class Car(models.Model):
     )
 
     class Meta:
-        verbose_name = _('Producto')
-        verbose_name_plural = _('Productos')
+        verbose_name = _('Carrito')
+        verbose_name_plural = _('Carrito Compra')
