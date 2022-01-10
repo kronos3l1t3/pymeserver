@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-02 20:36-0600\n"
+"POT-Creation-Date: 2022-01-07 16:03-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,28 +17,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: apps/nomenclators/apps.py:9
+#: apps/nomenclator/apps.py:9
 msgid "Nomenclator"
 msgstr "Nomenclador"
 
-#: apps/nomenclators/models.py:16 apps/nomenclators/models.py:37
-#: apps/nomenclators/models.py:63 apps/nomenclators/models.py:94
+#: apps/nomenclator/models.py:16 apps/nomenclator/models.py:41
+#: apps/nomenclator/models.py:67 apps/nomenclator/models.py:102
+#: apps/nomenclator/models.py:123 apps/payment/models.py:13
+#: apps/product/models.py:13
 msgid "action time"
 msgstr "adicionar tiempo"
 
-#: apps/nomenclators/models.py:21 apps/nomenclators/models.py:42
-#: apps/nomenclators/models.py:68 apps/nomenclators/models.py:99
+#: apps/nomenclator/models.py:21 apps/nomenclator/models.py:46
+#: apps/nomenclator/models.py:72 apps/nomenclator/models.py:107
+#: apps/nomenclator/models.py:128 apps/payment/models.py:18
+#: apps/product/models.py:18
 msgid "change time"
 msgstr "cambiar tiempo"
 
-#: apps/nomenclators/models.py:47
-msgid "Country"
-msgstr "Pais"
+#: apps/nomenclator/models.py:26
+msgid "Moneda"
+msgstr ""
 
-#: apps/nomenclators/models.py:48
-msgid "Countries"
-msgstr "Paises"
+#: apps/nomenclator/models.py:27
+msgid "Monedas"
+msgstr ""
+
+#: apps/nomenclator/models.py:51
+msgid "Pais"
+msgstr ""
+
+#: apps/nomenclator/models.py:52
+msgid "Paises"
+msgstr ""
+
+#: apps/nomenclator/models.py:77
+msgid "Localizacion"
+msgstr ""
+
+#: apps/nomenclator/models.py:78
+msgid "Localizaciones"
+msgstr ""
+
+#: apps/nomenclator/models.py:112
+msgid "Pasarela"
+msgstr ""
+
+#: apps/nomenclator/models.py:113
+msgid "Pasarelas"
+msgstr ""
+
+#: apps/nomenclator/models.py:133
+msgid "Tipo de Producto"
+msgstr ""
+
+#: apps/nomenclator/models.py:134
+msgid "Tipos de Productos"
+msgstr ""
 
 #: apps/panel/apps.py:9
 msgid "Panel"
 msgstr ""
+
+#: apps/payment/models.py:23 apps/product/models.py:23
+msgid "Producto"
+msgstr ""
+
+#: apps/payment/models.py:24 apps/product/models.py:24
+msgid "Productos"
+msgstr ""
+
+#~ msgid "Country"
+#~ msgstr "Pais"
+
+#~ msgid "Countries"
+#~ msgstr "Paises"

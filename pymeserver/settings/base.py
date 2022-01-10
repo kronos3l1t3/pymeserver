@@ -2,6 +2,7 @@
 Base settings to build other settings files upon.
 """
 from pathlib import Path
+import os
 
 import environ
 
@@ -37,8 +38,8 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     # 'apps.dashboard.DashboardConfig'
     'apps.panel.apps.PanelConfig',
-    'apps.nomenclators.apps.NomenclatorsConfig'
-    # 'apps.products.ProductsConfig'
+    'apps.nomenclator.apps.NomenclatorsConfig',
+    'apps.product.apps.ProductsConfig'
 ]
 
 INSTALLED_APPS += (THIRD_PARTY_APPS + LOCAL_APPS)
@@ -82,4 +83,5 @@ MEDIA_URL = '/media/'
 # LANGUAGE
 LANGUAGE_CODE = 'es-es'
 
-STATIC_ROOT = BASE_DIR.parent
+
+STATIC_ROOT = os.path.join(PORJECT_DIR, "statics")
