@@ -8,3 +8,4 @@ class ProductsConfig(AppConfig):
     label = 'Products'
     verbose_name = _('Producto')
     verbose_name_plural = _('Productos')
+
