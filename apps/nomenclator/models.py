@@ -21,6 +21,9 @@ class Coin(models.Model):
         auto_now=True
     )
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = _('Moneda')
         verbose_name_plural = _('Monedas')
@@ -45,6 +48,9 @@ class Country(models.Model):
         _('change time'),
         auto_now=True
     )
+
+    def __str__(self):
+        return self.name
 
     class Meta:
         verbose_name = _('Pais')
@@ -71,6 +77,9 @@ class Location(models.Model):
         _('change time'),
         auto_now=True
     )
+
+    def __str__(self):
+        return self.name
 
     class Meta:
         verbose_name = _('Localizacion')
@@ -107,6 +116,9 @@ class Gateway(models.Model):
         auto_now=True
     )
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = _('Pasarela')
         verbose_name_plural = _('Pasarelas')
@@ -127,6 +139,9 @@ class ProductType(models.Model):
         _('change time'),
         auto_now=True
     )
+
+    def __str__(self):
+        return self.name
 
     class Meta:
         verbose_name = _('Tipo de Producto')

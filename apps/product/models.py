@@ -19,6 +19,9 @@ class Product(models.Model):
         auto_now=True
     )
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = _('Producto')
         verbose_name_plural = _('Productos')
@@ -38,6 +41,9 @@ class Car(models.Model):
         _('change time'),
         auto_now=True
     )
+
+    def __str__(self):
+        return self.name
 
     class Meta:
         verbose_name = _('Carrito')

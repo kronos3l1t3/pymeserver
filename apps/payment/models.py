@@ -19,6 +19,9 @@ class Payment(models.Model):
         auto_now=True
     )
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = _('Pago')
         verbose_name_plural = _('Pagos')
