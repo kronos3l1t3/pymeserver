@@ -18,6 +18,17 @@ DATABASES = {
     }
 }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': env.str("DJANGO_DB_NAME", default='dcum544ehm72kk'),
+        'USER': env.str("DJANGO_USER_NAME", default='nwoujvfyzpmmxq'),
+        'PASSWORD': env.str("DJANGO_USER_NAME", default='574d1db47c089b7f9dd5125853b31ad8ed152c6f9696472fee0bba8508eff9dc'),
+        'HOST': env.str("DJANGO_DB_HOST", default='ec2-107-21-146-133.compute-1.amazonaws.com'),
+        'PORT': env.str("DJANGO_DB_PORT", default='5432'),
+    }
+}
+
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
